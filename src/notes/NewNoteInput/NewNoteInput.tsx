@@ -25,6 +25,7 @@ export const NewNoteInput: React.FC<IProps> = ({ addNote }) => {
         name="note"
         placeholder="Note"
         onChange={handleNoteChange}
+        value={note}
       />
       <button type="button" onClick={handleNoteSubmit}>
         Add note
