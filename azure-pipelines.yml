@@ -5,7 +5,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'notes.azurecr.io/notes:v1'
+  imageName: 'notes/notes:v1'
 
 steps:
 - task: Docker@2
