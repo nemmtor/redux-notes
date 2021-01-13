@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from 'redux';
+
 import {
   TNotesAction,
   addNote,
@@ -9,11 +10,10 @@ import {
   noteAlreadyExists,
 } from './notes';
 import { Note } from './notes/Note';
-
 import { notesSelector } from './notes/state/notesSelector';
 import { StarwarsDisplayer } from './starwars';
 
-function App(): JSX.Element {
+export const App: React.FC = () => {
   const notes = useSelector(notesSelector);
   const dispatch = useDispatch<Dispatch<TNotesAction>>();
 
@@ -36,6 +36,4 @@ function App(): JSX.Element {
       <StarwarsDisplayer />
     </>
   );
-}
-
-export default App;
+};

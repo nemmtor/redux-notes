@@ -6,7 +6,7 @@ import { removeNote, TNotesAction } from '../state';
 import styles from './styles.module.scss';
 
 interface IProps {
-  noteContent: string;
+  readonly noteContent: string;
 }
 
 export const Note: React.FC<IProps> = ({ noteContent }) => {

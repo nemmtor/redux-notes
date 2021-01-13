@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useState } from 'react';
 
 interface IProps {
-  addNote: (note: string) => void;
+  readonly addNote: (note: string) => void;
 }
 
 const initialNoteState = '';

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+Array [
+  <main
+    data-testid="note-container"
+  >
+    <input
+      name="note"
+      onChange={[Function]}
+      placeholder="Note"
+      type="text"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Add note
+    </button>
+  </main>,
+  <hr />,
+  <ul>
+    <li>
+      <span
+        className="note__text"
+      >
+        1
+      </span>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Remove
+      </button>
+    </li>
+    <li>
+      <span
+        className="note__text"
+      >
+        2
+      </span>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Remove
+      </button>
+    </li>
+  </ul>,
+  <hr />,
+  <main
+    data-testid="starwars-test"
+  >
+    <button
+      data-testid="starwars-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Fetch starwars info
+    </button>
+  </main>,
+]
+`;
