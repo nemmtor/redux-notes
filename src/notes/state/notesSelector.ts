@@ -1,4 +1,3 @@
-import { INotesState } from './INotesState';
+import { RootState } from '../../store';
 
-export const notesSelector = (state: INotesState): INotesState['notes'] =>
-  state.notes;
+export const notesSelector = (state: RootState): string[] => state.notes;

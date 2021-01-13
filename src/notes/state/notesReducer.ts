@@ -1,23 +1,19 @@
-import { INotesState } from './INotesState';
-import { TNotesAction } from './TNotesAction';
+import { TNotesAction } from './actions';
+import { NotesState } from './NotesState';
 
-const initialState = {
-  notes: [],
-};
+const initialState: string[] = [];
 
 export const notesReducer = (
-  state: INotesState = initialState,
+  state = initialState,
   action: TNotesAction,
-): INotesState => {
+): NotesState => {
   switch (action.type) {
     case 'ADD_NOTE': {
-      return { ...state, notes: [...state.notes, action.payload] };
+      return [...state, action.payload];
     }
     case 'REMOVE_NOTE': {
-      const notesAfterRemove = state.notes.filter(
-        (note) => note !== action.payload,
-      );
-      return { ...state, notes: notesAfterRemove };
+      const notesAfterRemove = state.filter((note) => note !== action.payload);
+      return [...notesAfterRemove];
     }
     default:
       return state;

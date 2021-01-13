@@ -1,5 +1,4 @@
 export { notesReducer } from './notesReducer';
-export type { INotesState } from './INotesState';
-export type { TNotesAction } from './TNotesAction';
+export type { NotesState } from './NotesState';
 export { addNote } from './addNote';
 export { removeNote } from './removeNote';

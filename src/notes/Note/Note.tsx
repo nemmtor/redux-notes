@@ -1,8 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Dispatch } from 'redux';
 
-import { removeNote, TNotesAction } from '../state';
+import { removeNote } from '../state';
 import styles from './styles.module.scss';
 
 interface IProps {
@@ -10,7 +9,7 @@ interface IProps {
 }
 
 export const Note: React.FC<IProps> = ({ noteContent }) => {
-  const dispatch = useDispatch<Dispatch<TNotesAction>>();
+  const dispatch = useDispatch();
   const handleRemoveNote = () => {
     dispatch(removeNote(noteContent));
   };
