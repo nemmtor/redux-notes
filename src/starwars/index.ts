@@ -1,0 +1,1 @@
+export { StarwarsDisplayer } from './StarwarsDisplayer';

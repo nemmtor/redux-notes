@@ -19,7 +19,7 @@ export const NewNoteInput: React.FC<IProps> = ({ addNote }) => {
   };
 
   return (
-    <div>
+    <main data-testid="note-container">
       <input
         type="text"
         name="note"
@@ -30,6 +30,6 @@ export const NewNoteInput: React.FC<IProps> = ({ addNote }) => {
       <button type="button" onClick={handleNoteSubmit}>
         Add note
       </button>
-    </div>
+    </main>
   );
 };

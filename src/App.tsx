@@ -11,6 +11,7 @@ import {
 import { Note } from './notes/Note';
 
 import { notesSelector } from './notes/state/notesSelector';
+import { StarwarsDisplayer } from './starwars';
 
 function App(): JSX.Element {
   const notes = useSelector(notesSelector);
@@ -31,6 +32,8 @@ function App(): JSX.Element {
           <Note key={note} noteContent={note} />
         ))}
       </ul>
+      <hr />
+      <StarwarsDisplayer />
     </>
   );
 }

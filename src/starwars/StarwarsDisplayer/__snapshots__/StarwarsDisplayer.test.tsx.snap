@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewNoteInput matches snapshot 1`] = `
+<main
+  data-testid="starwars-test"
+>
+  <button
+    data-testid="starwars-button"
+    onClick={[Function]}
+    type="button"
+  >
+    Fetch starwars info
+  </button>
+</main>
+`;

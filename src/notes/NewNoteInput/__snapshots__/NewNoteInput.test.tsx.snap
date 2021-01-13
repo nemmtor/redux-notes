@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewNoteInput matches snapshot 1`] = `
+<main
+  data-testid="note-container"
+>
+  <input
+    name="note"
+    onChange={[Function]}
+    placeholder="Note"
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Add note
+  </button>
+</main>
+`;
